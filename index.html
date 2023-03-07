@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    
+   <div class="container">
+        <div class="bodyLogin">
+            <h1>Crie sua Conta</h1>
+            <form class="form" action="" method="post">
+                <div class="mb-3">
+                    <label class="form-label" for="email">E-mail</label>
+                    <div class="input-group">
+                        <label for="email" class="top-13"><i class="ic-email"></i></label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="meuemail@exemplo.com">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="password">Senha</label>
+                    <div class="tooltip">
+                        <i class="ic-tooltip"></i>
+                        <span class="tooltiptext">Insira uma senha forte e única de no mínimo 8 caracteres que contenha pelo menos 1 letra maiúscula, 1 número e 1 caractere especial. Ex.: F#3mGp@9Lx </span>
+                    </div>
+                    <div class="input-group">
+                        <label for="password"><i class="sm ic-lock"></i></label>
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Minhasenha123@">
+                        <button class="btn" type="button" onclick="showHide()"><i class="sm ic-eye-off" id="icon"></i></button>
+                    </div>
+                </div>
+                
+                <p class="form-description text-center">Ao clicar no botão "Criar Conta", você está criando uma conta conosco e, portanto, concorda com nossos <a href="#" class="link">Termos de Uso</a> e <a href="#" class="link">Política de Privacidade</a></p>
+
+                <div class="mb-3 mt-3 text-center">
+                    <button class="btn-primary" type="submit">Criar Conta</button>
+                </div>
+
+                <p class="text-center" id="haveAcc">Já tem uma conta? Acesse a tela de login <a href="#" class="link">clicando aqui</a></p>
+            </form>
+        </div>
+   </div>
+
+<script src="script.js"></script>
+</body>
+</html>
